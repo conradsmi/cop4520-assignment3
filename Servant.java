@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Random;
 import java.util.concurrent.ConcurrentSkipListSet;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -28,8 +26,8 @@ public class Servant implements Runnable {
                 if (checkChain % 2 == 0 && !bag.isEmpty()) {
                     chain.add(bag.poll());
                 }
-                else if (!chain.isEmpty()) {
-                    chain.remove(chain.first());
+                else {
+                    chain.pollFirst();
                 }
                 checkChain++;
             }
