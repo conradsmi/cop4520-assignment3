@@ -32,12 +32,12 @@ public class ConcurrentLinkedList<T> {
                     curr = succ;
                     succ = curr.next.get(marked);
                 }
+                if (curr.key >= key) {
+                    return new Window(pred, curr);
+                }
+                pred = curr;
+                curr = succ;
             }
-            if (curr.key >= key) {
-                return new Window(pred, curr);
-            }
-            pred = curr;
-            curr = succ;
         }
     }
 
