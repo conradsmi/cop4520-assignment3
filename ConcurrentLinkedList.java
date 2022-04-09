@@ -81,7 +81,7 @@ public class ConcurrentLinkedList<T> {
     }
 
     public boolean contains(T x) {
-        boolean[] marked = false;
+        boolean[] marked = {false};
         int key = x.hashCode();
         Node<T> curr = head;
         while (curr.key < key) {
