@@ -21,7 +21,6 @@ public class TemperatureSensor implements Runnable {
 
         while (id < readings) {
             if (id < idCounter.get()) {
-                // System.out.println("ID " + id);
                 TemperatureReading t = new TemperatureReading(r.nextInt(170) - 100, id);
                 while (!sharedMem.add(t));
                 id = idCounter.getAndIncrement();
