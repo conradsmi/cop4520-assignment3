@@ -1,6 +1,4 @@
-import java.util.concurrent.atomic.AtomicMarkableReference;
-
-public class TemperatureReading {
+public class TemperatureReading implements Comparable<TemperatureReading> {
     int value;
     int readingId;
 
@@ -20,6 +18,11 @@ public class TemperatureReading {
 
     public static TemperatureReading max(TemperatureReading a, TemperatureReading b) {
         return (a.value >= b.value) ? a : b;
+    }
+
+    @Override
+    public int compareTo(TemperatureReading a) {
+        return this.value - a.value;
     }
 }
 

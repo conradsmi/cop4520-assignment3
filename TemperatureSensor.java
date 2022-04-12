@@ -6,14 +6,12 @@ public class TemperatureSensor implements Runnable {
 
     private ConcurrentLinkedList<TemperatureReading> sharedMem;
     private AtomicInteger idCounter;
-    private int minutes;
-    private CyclicBarrier bar;
+    private int readings;
 
-    public TemperatureSensor(ConcurrentLinkedList<TemperatureReading> sharedMem, AtomicInteger idCounter, int minutes, CyclicBarrier bar) {
+    public TemperatureSensor(ConcurrentLinkedList<TemperatureReading> sharedMem, AtomicInteger idCounter, int readings) {
         this.sharedMem = sharedMem;
         this.idCounter = idCounter;
-        this.minutes = minutes;
-        this.bar = bar;
+        this.readings = readings;
     }
 
     @Override
@@ -21,16 +19,12 @@ public class TemperatureSensor implements Runnable {
         int id = idCounter.getAndIncrement();
         Random r = new Random();
 
-        for (int i = 0; i < minutes; i++) {
-            // System.out.println("ID " + id);
-            TemperatureReading t = new TemperatureReading(r.nextInt(170) - 100, id);
-            while (!sharedMem.add(t));
-
-            id = idCounter.getAndIncrement();
-            try {
-                bar.await();
-            } catch (Exception e) {
-                e.printStackTrace();
+        while (id < readings) {
+            if (id < idCounter.get()) {
+                // System.out.println("ID " + id);
+                TemperatureReading t = new TemperatureReading(r.nextInt(170) - 100, id);
+                while (!sharedMem.add(t));
+                id = idCounter.getAndIncrement();
             }
         }
     }
