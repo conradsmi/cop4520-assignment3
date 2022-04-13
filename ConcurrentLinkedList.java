@@ -125,8 +125,9 @@ public class ConcurrentLinkedList<T> {
     }
 
     public boolean contains(T x) {
+        
         T ret = get(x);
-        return ret == null;
+        return ret != null;
     }
 
     public T get(T x) {
@@ -155,12 +156,11 @@ public class ConcurrentLinkedList<T> {
         }
     }
 
+    public int size() {
+        return size.get();
+    }
+
     public boolean isEmpty() {
-        /*try {
-            return this.head.next.getReference() == null;
-        } catch (Exception e) {
-            return true;
-        }*/
-        return size.get() == 0;
+        return size() == 0;
     }
 }
