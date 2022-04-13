@@ -7,7 +7,7 @@ public class Node<T> {
 
     public Node(T item) {
         this.item = item;
-        this.key = this.hashCode();
+        this.key = this.item.hashCode();
         this.next = null;
     }
 }
