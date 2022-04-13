@@ -30,6 +30,7 @@ public class Problem1 {
                 e.printStackTrace();
             }
         }
+        System.out.println("Final chain size: " + chain.size());
         System.out.println("Done!");
     }
 }
