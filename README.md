@@ -19,7 +19,7 @@ Hyperparameters are provided via constants at the beginning of Servant.java (`CH
 
 Again, to compile and run this, just do:
 
-    javac \*.java
+    javac *.java
     time java Problem2
     
 Each sensor is represented by a thread running the TemperatureSensor class. At the start of execution, the main thread (the rover itself) provides the shared memory (the same lock-free list implementation as Problem 1), a shared id counter (which helps the sensor account for time), and the total number of readings to perform. Every minute, the sensor will make a reading and add it to the shared memory chain. The sensor will then wait until the other sensors are done performing their reading for that minute. A minute passes when all 8 sensors have made their readings. This sequence continues until the total number of required readings is achieved. 
