@@ -6,7 +6,7 @@ Both problems were written in Java and compiled with openjdk 17.0.2+8-Debian-1de
 
 To compile and run this program, just do:
   
-    javac \*.java
+    javac *.java
     time java Problem1
 
 A Lock-Free Concurrent Linked List was implemented to solve this problem. Given a reference to the unordered bag (represented by a thread-unsafe ArrayList) and an AtomicInteger indicating the next gift to access, each servant works their way through the bag and adds it to the chain (represented by the concurrent linked list), representing the first action. On every k additions (represented by `ADD_REMOVE_RATIO`, initially set to 2, which means a removal for every addition), the servant will attempt to remove a random gift from the chain, representing the second action. Finally, each servant will search for a present on the chain at predetermined intervals (represented by `CHECK_CHAIN_INTERVAL_DIVIDEND`, which is initially set to 30, meaning a total of 30 checks will occur throughout execution).  This represents action 3.
