@@ -93,11 +93,11 @@ public class Problem2 {
                 System.out.println("Report " + reportsDone + "...");
                 System.out.println("    Top " + minResults.size() + " lowest unique recordings:");
                 for (TemperatureReading t : minResults) {
-                    System.out.println(t.value + " degrees at minute " + t.readingId / THREAD_COUNT);
+                    System.out.println("        " + t.value + " degrees at minute " + t.readingId / THREAD_COUNT);
                 }
                 System.out.println("    Top " + maxResults.size() + " highest unique recordings: ");
                 for (TemperatureReading t : maxResults) {
-                    System.out.println(t.value + " degrees at minute " + t.readingId / THREAD_COUNT);
+                    System.out.println("        " + t.value + " degrees at minute " + t.readingId / THREAD_COUNT);
                 }
                 System.out.println("    Largest interval: " + largestDiffVal + " degree change between minutes "
                                     + largestDiff[0].readingId / THREAD_COUNT + " and " + largestDiff[1].readingId / THREAD_COUNT);
