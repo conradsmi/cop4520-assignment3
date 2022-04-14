@@ -2,6 +2,8 @@
 
 Both problems were written in Java and compiled with openjdk 17.0.2+8-Debian-1deb11u1 (essentially just Java 17.0.2). This will probably work on older versions though. As the openjdk name implies, this was written, compiled, tested on a Debian 11 (Bullseye) Linux machine.
 
+Sample output is provided for both problems under sample_p1.out and sample_p2.out.
+
 ## Problem 1
 
 To compile and run this program, just do:
