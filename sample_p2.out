@@ -1,0 +1,145 @@
+Report 1...
+    Top 5 lowest unique recordings:
+        -100 degrees at minute 19
+        -99 degrees at minute 51
+        -98 degrees at minute 15
+        -97 degrees at minute 44
+        -96 degrees at minute 18
+    Top 5 highest unique recordings: 
+        69 degrees at minute 28
+        67 degrees at minute 40
+        66 degrees at minute 4
+        65 degrees at minute 39
+        64 degrees at minute 37
+    Largest interval: 166 degree change between minutes 19 and 29
+Report 2...
+    Top 5 lowest unique recordings:
+        -100 degrees at minute 88
+        -99 degrees at minute 106
+        -98 degrees at minute 73
+        -97 degrees at minute 70
+        -96 degrees at minute 68
+    Top 5 highest unique recordings: 
+        69 degrees at minute 71
+        68 degrees at minute 91
+        67 degrees at minute 102
+        66 degrees at minute 99
+        65 degrees at minute 79
+    Largest interval: 167 degree change between minutes 67 and 77
+Report 3...
+    Top 5 lowest unique recordings:
+        -100 degrees at minute 128
+        -99 degrees at minute 124
+        -98 degrees at minute 152
+        -97 degrees at minute 137
+        -96 degrees at minute 122
+    Top 5 highest unique recordings: 
+        69 degrees at minute 128
+        68 degrees at minute 176
+        67 degrees at minute 146
+        66 degrees at minute 136
+        65 degrees at minute 127
+    Largest interval: 166 degree change between minutes 128 and 138
+Report 4...
+    Top 5 lowest unique recordings:
+        -100 degrees at minute 210
+        -99 degrees at minute 191
+        -98 degrees at minute 205
+        -97 degrees at minute 198
+        -96 degrees at minute 180
+    Top 5 highest unique recordings: 
+        69 degrees at minute 191
+        68 degrees at minute 204
+        67 degrees at minute 184
+        66 degrees at minute 227
+        65 degrees at minute 185
+    Largest interval: 166 degree change between minutes 212 and 222
+Report 5...
+    Top 5 lowest unique recordings:
+        -100 degrees at minute 258
+        -99 degrees at minute 246
+        -97 degrees at minute 287
+        -96 degrees at minute 278
+        -95 degrees at minute 258
+    Top 5 highest unique recordings: 
+        69 degrees at minute 246
+        68 degrees at minute 245
+        67 degrees at minute 285
+        66 degrees at minute 273
+        65 degrees at minute 240
+    Largest interval: 165 degree change between minutes 273 and 283
+Report 6...
+    Top 5 lowest unique recordings:
+        -100 degrees at minute 327
+        -99 degrees at minute 333
+        -98 degrees at minute 351
+        -97 degrees at minute 357
+        -96 degrees at minute 325
+    Top 5 highest unique recordings: 
+        69 degrees at minute 306
+        68 degrees at minute 334
+        67 degrees at minute 316
+        66 degrees at minute 320
+        65 degrees at minute 305
+    Largest interval: 169 degree change between minutes 327 and 337
+Report 7...
+    Top 5 lowest unique recordings:
+        -100 degrees at minute 376
+        -99 degrees at minute 364
+        -98 degrees at minute 408
+        -97 degrees at minute 396
+        -96 degrees at minute 410
+    Top 5 highest unique recordings: 
+        69 degrees at minute 369
+        68 degrees at minute 399
+        67 degrees at minute 403
+        66 degrees at minute 401
+        65 degrees at minute 373
+    Largest interval: 167 degree change between minutes 395 and 405
+Report 8...
+    Top 5 lowest unique recordings:
+        -100 degrees at minute 428
+        -99 degrees at minute 423
+        -98 degrees at minute 438
+        -97 degrees at minute 423
+        -96 degrees at minute 453
+    Top 5 highest unique recordings: 
+        68 degrees at minute 421
+        67 degrees at minute 439
+        66 degrees at minute 456
+        65 degrees at minute 473
+        64 degrees at minute 422
+    Largest interval: 166 degree change between minutes 456 and 466
+Report 9...
+    Top 5 lowest unique recordings:
+        -100 degrees at minute 508
+        -99 degrees at minute 483
+        -98 degrees at minute 482
+        -97 degrees at minute 484
+        -96 degrees at minute 531
+    Top 5 highest unique recordings: 
+        69 degrees at minute 521
+        68 degrees at minute 484
+        67 degrees at minute 533
+        66 degrees at minute 523
+        65 degrees at minute 499
+    Largest interval: 167 degree change between minutes 483 and 493
+Report 10...
+    Top 5 lowest unique recordings:
+        -100 degrees at minute 598
+        -99 degrees at minute 557
+        -98 degrees at minute 550
+        -97 degrees at minute 576
+        -96 degrees at minute 559
+    Top 5 highest unique recordings: 
+        69 degrees at minute 548
+        68 degrees at minute 549
+        67 degrees at minute 562
+        66 degrees at minute 561
+        65 degrees at minute 579
+    Largest interval: 168 degree change between minutes 556 and 566
+Done!
+
+real	0m0.113s
+user	0m0.463s
+sys	0m0.021s
