@@ -4,10 +4,8 @@ import java.util.ArrayList;
 
 public class Servant implements Runnable {
     private final int CHECK_CHAIN_INTERVAL_DIVIDEND = 30;
-    private final int ADD_REMOVE_RATIO = 3;
+    private final int ADD_REMOVE_RATIO = 2; // Change this to 3 to see more successful contains calls
 
-    // private ConcurrentSkipListSet<Integer> chain;
-    // private ConcurrentLinkedQueue<Integer> bag;
     private ConcurrentLinkedList<Integer> chain;
     private ArrayList<Integer> bag;
     private AtomicInteger giftCounter;

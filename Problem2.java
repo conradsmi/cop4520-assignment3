@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Problem2 {
-    public static final int TOTAL_REPORTS = 100;
+    public static final int TOTAL_REPORTS = 10;
     public static final int THREAD_COUNT = 8;
     public static final int HOUR = 60;
     public static final int INTERVAL = 10;

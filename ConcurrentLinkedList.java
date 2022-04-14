@@ -83,13 +83,6 @@ public class ConcurrentLinkedList<T> {
                 return false;
             }
             else {
-                /*if (curr != null) {
-                    node.next = new AtomicMarkableReference<Node<T>>(curr, false);
-                }
-                if (pred.next == null) {
-                    pred.next = new AtomicMarkableReference<Node<T>>(node, false);
-                    return true;
-                }*/
                 node.next = new AtomicMarkableReference<Node<T>>(curr, false);
                 if (pred.next.compareAndSet(curr, node, false, false)) {
                     size.getAndIncrement();
@@ -125,7 +118,6 @@ public class ConcurrentLinkedList<T> {
     }
 
     public boolean contains(T x) {
-        
         T ret = get(x);
         return ret != null;
     }

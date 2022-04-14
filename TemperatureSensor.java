@@ -1,6 +1,5 @@
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.CyclicBarrier;
 
 public class TemperatureSensor implements Runnable {
 
@@ -22,7 +21,7 @@ public class TemperatureSensor implements Runnable {
         while (id < readings) {
             if (id < idCounter.get()) {
                 TemperatureReading t = new TemperatureReading(r.nextInt(170) - 100, id);
-                while (!sharedMem.add(t));
+                sharedMem.add(t);
                 id = idCounter.getAndIncrement();
             }
         }
